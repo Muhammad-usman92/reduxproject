@@ -1,10 +1,17 @@
-
-import React from 'react'
+import React from "react";
+import Header from "./container/header";
+import ProductComponent from "./container/productComponent";
+import ProductListing from "./container/productListing";
+import {Routes,Route} from "react-router-dom"
 
 const App = () => {
   return (
-    <div>REdux projext</div>
-  )
-}
+    <>
+      <Routes>
+        <Route path="/" element={<ProductListing />} />
+      </Routes>
+    </>
+  );
+};
 
-export default App
+export default App;
